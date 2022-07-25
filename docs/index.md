@@ -18,7 +18,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/what-is-vitepress
+      link: ./guide/vue3-upgrade
     - theme: alt
       text: View on juejin
       link: https://juejin.cn/user/2101921962267079/posts
@@ -31,6 +31,6 @@ features:
     title: 踩坑心得
     details: 前端技术探索，各大组件库使用指南，各种技术重点难点踩坑心得
   - icon: 🤔
-    title: 有趣物语
+    title: 青山物语
     details: 随心笔记，记录有趣的事物
 ---

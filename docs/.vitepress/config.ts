@@ -41,13 +41,13 @@ export default defineConfig({
 
     // 顶部菜单导航
     nav: [
-      { text: 'Guide', link: '/guide' },
+      { text: '前端指南', link: '/guide/vue3-upgrade', activeMatch: '/guide/' },
       {
-        text: 'Dropdown Menu',
+        text: '踩坑心得',
         items: [
-          { text: 'Item A', link: '/item-1' },
-          { text: 'Item B', link: '/item-2' },
-          { text: 'Item C', link: '/item-3' },
+          { text: 'Element UI 系列', link: '/feelings/el-date-picker.md' },
+          { text: 'Ant design vue 系列', link: '/item-1' },
+          { text: 'Echarts 系列', link: '/item-1' },
         ],
       },
     ],
@@ -55,11 +55,12 @@ export default defineConfig({
     // 侧边栏导航
     sidebar: [
       {
-        text: 'Guide',
-        items: [
-          { text: 'Introduction', link: '/introduction' },
-          { text: 'Getting Started', link: '/getting-started' },
-        ],
+        text: '前端指南',
+        items: [{ text: '项目从 Vue3.0 升级到 Vue3.2', link: '/guide/vue3-upgrade' }],
+      },
+      {
+        text: '踩坑心得',
+        items: [{ text: 'Element 日期组件范围选择', link: '/feelings/el-date-picker.md' }],
       },
     ],
 
