@@ -1,11 +1,12 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
-  base: '/',
+  base: '/note/',
   lang: 'zh-CN',
   title: '青山依旧的网络日记',
   description: '记录web前端那些事',
   lastUpdated: true,
+  outDir: './.vitepress/lib',
 
   // HTML head
   head: [
@@ -39,31 +40,6 @@ export default defineConfig({
       text: 'Edit this page on Gitee',
     },
 
-    // 顶部菜单导航
-    nav: [
-      { text: '前端指南', link: '/guide/vue3-upgrade', activeMatch: '/guide/' },
-      {
-        text: '踩坑心得',
-        items: [
-          { text: 'Element UI 系列', link: '/feelings/el-date-picker.md' },
-          { text: 'Ant design vue 系列', link: '/item-1' },
-          { text: 'Echarts 系列', link: '/item-1' },
-        ],
-      },
-    ],
-
-    // 侧边栏导航
-    sidebar: [
-      {
-        text: '前端指南',
-        items: [{ text: '项目从 Vue3.0 升级到 Vue3.2', link: '/guide/vue3-upgrade' }],
-      },
-      {
-        text: '踩坑心得',
-        items: [{ text: 'Element 日期组件范围选择', link: '/feelings/el-date-picker.md' }],
-      },
-    ],
-
     // 社交链接（显示在网站右上角）
     socialLinks: [
       { icon: 'github', link: 'https://gitee.com/jsdawn' },
@@ -88,5 +64,44 @@ export default defineConfig({
     //   code: '',
     //   placement: ''
     // }
+
+    // 顶部菜单导航
+    nav: nav(),
+
+    // 侧边栏导航
+    sidebar: sidebar(),
   },
 });
+
+function nav() {
+  return [
+    { text: '前端指南', link: '/guide/vue3-upgrade', activeMatch: '/guide/' },
+    {
+      text: '踩坑心得',
+      items: [
+        { text: 'Element UI 系列', link: '/feelings/el-date-picker.md' },
+        { text: 'Ant design vue 系列', link: '/feelings/a-upload.md' },
+        { text: 'Echarts 系列', link: '/feelings/echarts-wordcloud.md' },
+      ],
+    },
+  ];
+}
+
+function sidebar() {
+  return [
+    {
+      text: '前端指南',
+      collapsible: true,
+      items: [{ text: '项目从 Vue3.0 升级到 Vue3.2', link: '/guide/vue3-upgrade' }],
+    },
+    {
+      text: '踩坑心得',
+      collapsible: true,
+      items: [
+        { text: 'Element 日期组件范围选择', link: '/feelings/el-date-picker.md' },
+        { text: 'Antd vue Upload 自定义上传', link: '/feelings/a-upload.md' },
+        { text: 'echarts 词云图', link: '/feelings/echarts-wordcloud.md' },
+      ],
+    },
+  ];
+}
