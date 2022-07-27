@@ -21,7 +21,7 @@ title: vue3-tinymce 富文本编辑器
 
 个人开发一套完美的富文本编辑器难度大且耗时，在挑选插件中发现 tinymce editor 背景和功能都非常强大，并且文档清晰。基于 `tinymce` 封装组件是一个非常好的选择。
 
-该组件清晰易懂，可自行修改为 vue2 版本使用。期待你的 Star <Badge type="tip" text="+1" vertical="top" /> ，发现问题可以提到 issues 👏
+该组件清晰易懂，可自行修改为 vue2 版本使用。期待你的 Star ，发现问题可以提到 issues 👏
 
 ## 组件特色
 
