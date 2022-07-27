@@ -1,7 +1,9 @@
 import { defineConfig } from 'vitepress';
 
+let base = '/note/';
+
 export default defineConfig({
-  base: '/note/',
+  base: base,
   lang: 'zh-CN',
   title: '青山依旧的网络日记',
   description: '记录web前端那些事',
@@ -17,7 +19,7 @@ export default defineConfig({
         content: 'jsdawn,青山依旧,网络日记,笔记,web前端,js,vue,vite',
       },
     ],
-    ['link', { rel: 'icon', href: '/logo.svg' }],
+    ['link', { rel: 'icon', href: base + 'logo.svg' }],
   ],
 
   // markdown 解析器配置
@@ -55,7 +57,7 @@ export default defineConfig({
     // algolia 搜索配置
     algolia: {
       appId: 'VL3TUT5ZUE',
-      apiKey: 'ae6d06ab3a6e897aa89fe71555137a49',
+      apiKey: '3395e258cd95ff782b13284b82c59770',
       indexName: 'blog',
     },
 
