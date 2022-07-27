@@ -1,7 +1,7 @@
 ---
 title: 青山依旧的网络日记
 titleTemplate: 分享web前端那些事
-description: 关于我，你了解多少
+description: 分享web前端技术，记录有趣的事物
 editLink: true
 lastUpdated: true
 layout: home
