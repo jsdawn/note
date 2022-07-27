@@ -29,7 +29,7 @@ export default defineConfig({
     // siteTitle: '青山依旧的网络日记',
     logo: '/logo.svg',
     // 右侧文章目录标题
-    outlineTitle: '文章目录',
+    outlineTitle: '﹌﹋文章目录﹋﹌',
     // 文章最近更新日期
     lastUpdatedText: 'Updated Date',
 
@@ -84,6 +84,7 @@ function nav() {
         { text: 'Echarts 系列', link: '/feelings/echarts-wordcloud.md' },
       ],
     },
+    { text: '青山物语', link: '/tale/hexo-create', activeMatch: '/tale/' },
   ];
 }
 
@@ -92,15 +93,31 @@ function sidebar() {
     {
       text: '前端指南',
       collapsible: true,
-      items: [{ text: '项目从 Vue3.0 升级到 Vue3.2', link: '/guide/vue3-upgrade' }],
+      items: [
+        { text: 'Vue3.0 项目升级到 Vue3.2', link: '/guide/vue3-upgrade' },
+        { text: 'Vue3 tinymce 富文本编辑器', link: '/guide/vue3-tinymce' },
+        { text: 'Flutter 2 商城App实战指南', link: '/guide/flutter-mall' },
+        { text: 'Flutter 布局相关', link: '/guide/flutter-weiget' },
+        { text: 'Flutter 语法相关', link: '/guide/flutter-const' },
+        { text: 'Docker 部署 Node 项目', link: '/guide/docker-compose' },
+        { text: 'Docker GitHub 集成工作流', link: '/guide/docker-github' },
+      ],
     },
     {
       text: '踩坑心得',
       collapsible: true,
       items: [
-        { text: 'Element 日期组件范围选择', link: '/feelings/el-date-picker.md' },
-        { text: 'Antd vue Upload 自定义上传', link: '/feelings/a-upload.md' },
-        { text: 'echarts 词云图', link: '/feelings/echarts-wordcloud.md' },
+        { text: 'Element 日期组件范围选择', link: '/feelings/el-date-picker' },
+        { text: 'Antd vue Upload 自定义上传', link: '/feelings/a-upload' },
+        { text: 'Echarts 词云图', link: '/feelings/echarts-wordcloud' },
+      ],
+    },
+    {
+      text: '青山物语',
+      collapsible: true,
+      items: [
+        { text: 'Hexo 博客搭建简易教程', link: '/tale/hexo-create' },
+        { text: 'P1 攻城狮的江湖总结', link: '/tale/p1-zongjie' },
       ],
     },
   ];
