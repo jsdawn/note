@@ -55,8 +55,8 @@ export default defineConfig({
     // algolia 搜索配置
     algolia: {
       appId: 'VL3TUT5ZUE',
-      apiKey: '3395e258cd95ff782b13284b82c59770',
-      indexName: 'note',
+      apiKey: 'ae6d06ab3a6e897aa89fe71555137a49',
+      indexName: 'blog',
     },
 
     // Carbon 广告接入项 Carbon Ads (https://www.carbonads.net/blogs).
