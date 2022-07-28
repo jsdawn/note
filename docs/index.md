@@ -34,3 +34,9 @@ features:
     title: 青山物语
     details: 随心笔记，记录有趣的事物
 ---
+
+<script setup>
+import NTBadge  from './components/NTBadge.vue'
+</script>
+
+<NTBadge/>

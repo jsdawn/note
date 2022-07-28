@@ -80,12 +80,14 @@ function nav() {
     { text: '前端指南', link: '/guide/vue3-upgrade', activeMatch: '/guide/' },
     {
       text: '踩坑心得',
+      activeMatch: '/feelings/',
       items: [
-        { text: 'Element UI 系列', link: '/feelings/el-date-picker.md' },
-        { text: 'Ant design vue 系列', link: '/feelings/a-upload.md' },
-        { text: 'Echarts 系列', link: '/feelings/echarts-wordcloud.md' },
+        { text: 'Element UI 系列', link: '/feelings/el-date-picker' },
+        { text: 'Ant design vue 系列', link: '/feelings/a-upload' },
+        { text: 'Echarts 系列', link: '/feelings/echarts-wordcloud' },
       ],
     },
+    { text: 'Git/Node/Npm', link: '/node/git-npm', activeMatch: '/node/' },
     { text: '青山物语', link: '/tale/hexo-create', activeMatch: '/tale/' },
   ];
 }
@@ -113,6 +115,11 @@ function sidebar() {
         { text: 'Antd vue Upload 自定义上传', link: '/feelings/a-upload' },
         { text: 'Echarts 词云图', link: '/feelings/echarts-wordcloud' },
       ],
+    },
+    {
+      text: 'Git / Node / Npm',
+      collapsible: true,
+      items: [{ text: 'Git & Npm 常用指令', link: '/node/git-npm' }],
     },
     {
       text: '青山物语',
