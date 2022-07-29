@@ -87,7 +87,7 @@ function nav() {
         { text: 'Echarts 系列', link: '/feelings/echarts-wordcloud' },
       ],
     },
-    { text: 'Git/Node/Npm', link: '/node/git-npm', activeMatch: '/node/' },
+    { text: 'Git/Node', link: '/node/git-npm', activeMatch: '/node/' },
     { text: '青山物语', link: '/tale/hexo-create', activeMatch: '/tale/' },
   ];
 }
@@ -125,6 +125,7 @@ function sidebar() {
       text: '青山物语',
       collapsible: true,
       items: [
+        { text: '青山画廊', link: '/tale/hualang' },
         { text: 'Hexo 博客搭建简易教程', link: '/tale/hexo-create' },
         { text: 'P1 攻城狮的江湖总结', link: '/tale/p1-zongjie' },
       ],

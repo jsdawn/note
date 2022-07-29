@@ -17,11 +17,12 @@ hero:
   tagline: 分享web前端技术，记录有趣的事物🤔
   actions:
     - theme: brand
+      text: 青山画廊
+      link: ./tale/hualang
+    - theme: alt
       text: Get Started
       link: ./guide/vue3-upgrade
-    - theme: alt
-      text: View on juejin
-      link: https://juejin.cn/user/2101921962267079/posts
+      # link: https://juejin.cn/user/2101921962267079/posts
 
 features:
   - icon: JS
