@@ -3,7 +3,10 @@
     <div class="ICover">
       <div
         class="ICoverImg"
-        :style="{ backgroundImage: `url(${item.image})`, paddingBottom: 100 * item.ratio + '%' }"
+        :style="{
+          backgroundImage: `url(${item.image})`,
+          paddingBottom: (1 / item.ratio) * 100 + '%',
+        }"
         alt=""
       ></div>
     </div>

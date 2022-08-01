@@ -1,6 +1,7 @@
+/// <reference types="vite/client" />
 import { defineConfig } from 'vitepress';
 
-let base = '/note/';
+const base = '/note/';
 
 export default defineConfig({
   base: base,
@@ -125,7 +126,7 @@ function sidebar() {
       text: '青山物语',
       collapsible: true,
       items: [
-        { text: '青山画廊', link: '/tale/hualang' },
+        { text: '🏞 青山画廊', link: '/tale/hualang' },
         { text: 'Hexo 博客搭建简易教程', link: '/tale/hexo-create' },
         { text: 'P1 攻城狮的江湖总结', link: '/tale/p1-zongjie' },
       ],
