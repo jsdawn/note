@@ -35,8 +35,8 @@ list:
     title: 天空幻境
     brief: 海天一色
 
-  - image: /hualang/锅哥夏天.jpeg
-    ratio: 1.33
+  - image: /hualang/锅哥夏天.jpg
+    ratio: 1
     title: 奔赴盛夏
     brief: 藏在盛夏的爱意
 ---
