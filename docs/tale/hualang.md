@@ -39,11 +39,12 @@ list:
     ratio: 1
     title: 奔赴盛夏
     brief: 藏在盛夏的爱意
+    author: 郭梳子
 ---
 
 <script setup>
 import { useData, withBase } from 'vitepress';
-import HuaLang from '../pages/HuaLang.vue';
+import HuaLang from '../widgets/HuaLang.vue';
 
 const { page } = useData();
 const list = (page.value.frontmatter?.list || []).map((v) => ({

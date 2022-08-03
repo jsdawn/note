@@ -9,6 +9,7 @@
         }"
         alt=""
       ></div>
+      <div class="IAuthor">@{{ item.author || '网络图片' }}</div>
     </div>
 
     <div class="IText">
@@ -33,12 +34,22 @@ withDefaults(
 </script>
 
 <style lang="sass" scoped>
+.ICover
+  position: relative
+
 .ICoverImg
     height: 0
     padding-bottom: 100%
     background-size: cover
     background-position: center
     border-radius: 10px
+
+.IAuthor
+  position: absolute
+  right: 5px
+  bottom: 2px
+  font-size: 12px
+  color: #fff
 
 .IText
     color: var(--vp-c-text-3)
