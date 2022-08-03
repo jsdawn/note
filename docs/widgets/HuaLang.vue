@@ -37,5 +37,5 @@ defineProps<{ list: IImageText[] }>();
     color: var(--vp-c-brand)
 
 .HWrapper
-  margin: 6vh 0
+  padding: 6vh 24px
 </style>
