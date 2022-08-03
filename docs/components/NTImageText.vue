@@ -4,14 +4,14 @@
       <div
         class="ICoverImg"
         :style="{
-          backgroundImage: `url(${item.image})`,
           paddingBottom: (1 / item.ratio) * 100 + '%',
         }"
         alt=""
+        :data-src="item.image"
+        v-lazy
       ></div>
       <div class="IAuthor">@{{ item.author || '网络图片' }}</div>
     </div>
-
     <div class="IText">
       <h3 v-text="item.title" v-if="item.title"></h3>
       <p v-text="item.brief" v-if="item.brief"></p>
@@ -20,17 +20,14 @@
 </template>
 
 <script setup lang="ts">
-import { withDefaults } from 'vue';
 import type { IImageText } from '../types/index';
+import { useLazyLoad } from '../hooks';
 
-withDefaults(
-  defineProps<{
-    item: IImageText;
-  }>(),
-  {
-    item: () => ({ image: '', ratio: 1 }),
-  }
-);
+defineProps<{ item: IImageText }>();
+
+const vLazy = useLazyLoad();
+
+// 指令：图片懒加载
 </script>
 
 <style lang="sass" scoped>
@@ -42,6 +39,7 @@ withDefaults(
     padding-bottom: 100%
     background-size: cover
     background-position: center
+    background-color: var(--vp-c-bg-soft)
     border-radius: 10px
 
 .IAuthor
