@@ -1,3 +1,4 @@
+// 图片懒加载
 export const useLazyLoad = () => {
   const vLazy = {
     mounted: (el: HTMLElement) => {

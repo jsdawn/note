@@ -15,16 +15,18 @@ import { useSlideIn } from '../hooks';
 const props = withDefaults(
   defineProps<{
     list: any[];
+    slide?: boolean;
     columnWidth?: number; // 列宽
     columnGap?: number; // 列间距
   }>(),
   {
+    slide: true,
     columnWidth: 240,
     columnGap: 24,
   }
 );
 
-const vSlide = useSlideIn();
+const vSlide = props.slide ? useSlideIn() : {};
 
 const wrapper = ref<HTMLElement | null>(null);
 const content = ref<HTMLElement | null>(null);
