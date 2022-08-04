@@ -33,7 +33,7 @@ const content = ref<HTMLElement | null>(null);
 // waterfall flow 瀑布流列高 [0,0,0,...]
 const flowHeight: number[] = [];
 
-// 绘制瀑布流
+/// 绘制瀑布流
 const flowDraw = () => {
   if (!content.value) return;
   // 初始化列高
@@ -45,6 +45,7 @@ const flowDraw = () => {
   // 设置容器宽（居中布局）
   content.value.style.width =
     (props.columnWidth + props.columnGap) * columnCount - props.columnGap + 'px';
+
   // 绘制 item
   const doms = content.value.querySelectorAll('.NTFlowItem');
   doms.forEach((dom: any) => {
@@ -57,20 +58,20 @@ const flowDraw = () => {
   content.value.style.height = Math.max(...flowHeight) + 'px';
 };
 
-// 获取适配列数量
+/// 获取列数量
 const getColumnCount = (): number => {
   if (!wrapper.value) return 0;
   const num = (wrapper.value.offsetWidth + props.columnGap) / (props.columnWidth + props.columnGap);
   return Math.min(Math.floor(num), props.list.length);
 };
 
-// 获取最小值的索引 index
+/// 获取最小值的索引 index
 const getMinIndex = (list: number[]) => {
   const min = Math.min(...list);
   return list.indexOf(min);
 };
 
-// 监听窗口变化重绘瀑布流布局
+/// 监听窗口变化重绘瀑布流布局
 let timer: number | null = null;
 const onResize = () => {
   if (timer) {

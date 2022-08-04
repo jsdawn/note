@@ -14,7 +14,6 @@
 
 <script setup lang="ts">
 import type { IImageText } from '../types/index';
-// import ImageText from '../components/NTImageText.vue';
 
 defineProps<{ list: IImageText[] }>();
 </script>

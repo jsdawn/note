@@ -26,8 +26,6 @@ import { useLazyLoad } from '../hooks';
 defineProps<{ item: IImageText }>();
 
 const vLazy = useLazyLoad();
-
-// 指令：图片懒加载
 </script>
 
 <style lang="sass" scoped>
