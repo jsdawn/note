@@ -31,6 +31,11 @@ const vLazy = useLazyLoad();
 </script>
 
 <style lang="sass" scoped>
+.NTImageText
+  transition: transform .22s ease-in
+  &:hover
+    transform: scale(1.08)
+
 .ICover
   position: relative
 

@@ -1,7 +1,7 @@
 <template>
   <div class="NTFlowList" ref="wrapper">
     <div class="NTFlowContent" ref="content">
-      <div class="NTFlowItem" v-for="(item, index) in list" :key="index">
+      <div class="NTFlowItem" v-for="(item, index) in list" :key="index" v-slide>
         <slot name="item" :index="index" :item="item"></slot>
       </div>
     </div>
@@ -10,6 +10,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount, withDefaults } from 'vue';
+import { useSlideIn } from '../hooks';
 
 const props = withDefaults(
   defineProps<{
@@ -22,6 +23,8 @@ const props = withDefaults(
     columnGap: 24,
   }
 );
+
+const vSlide = useSlideIn();
 
 const wrapper = ref<HTMLElement | null>(null);
 const content = ref<HTMLElement | null>(null);
@@ -44,10 +47,8 @@ const flowDraw = () => {
   const doms = content.value.querySelectorAll('.NTFlowItem');
   doms.forEach((dom: any) => {
     const minIdx = getMinIndex(flowHeight);
-    const transform = `translate(${minIdx * (props.columnWidth + props.columnGap)}px, ${
-      flowHeight[minIdx]
-    }px)`;
-    dom.style.transform = transform;
+    dom.style.left = `${minIdx * (props.columnWidth + props.columnGap)}px`;
+    dom.style.top = `${flowHeight[minIdx]}px`;
     flowHeight[minIdx] += dom.offsetHeight;
   });
   // 设置容器高
@@ -90,9 +91,6 @@ onBeforeUnmount(() => {
 </script>
 
 <style lang="sass" scoped>
-.NTFlowList
-  overflow: hidden
-
 .NTFlowContent
   margin-left: auto
   margin-right: auto
