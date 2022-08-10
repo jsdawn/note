@@ -100,7 +100,6 @@ function sidebar() {
       collapsible: true,
       items: [
         { text: 'Vue3.0 项目升级到 Vue3.2', link: '/guide/vue3-upgrade' },
-        { text: 'Vue3 tinymce 富文本编辑器', link: '/guide/vue3-tinymce' },
         { text: 'Flutter 2 商城App实战指南', link: '/guide/flutter-mall' },
         { text: 'Flutter 布局相关', link: '/guide/flutter-weiget' },
         { text: 'Flutter 语法相关', link: '/guide/flutter-const' },
