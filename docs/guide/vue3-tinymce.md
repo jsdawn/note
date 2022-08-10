@@ -54,7 +54,7 @@ title: vue3-tinymce 富文本编辑器
 
 ### 获取组件
 
-[Vue3Tinymce 仓库](https://gitee.com/jsdawn/vue3-tinymce.git) 获取 `packages/Vue3Tinymce` 组件文件，Copy 到自己项目中使用。setting 选项配置参照 [tinymce 官方文档](https://www.tiny.cloud/docs/)
+[Vue3Tinymce 仓库](https://gitee.com/jsdawn/vue3-tinymce.git) 获取 `packages/Vue3Tinymce` 组件文件，Copy 到自己项目中使用。setting 选项配置参照 `tinymce 官方文档`
 
 这里也提供 NPM 引入：`npm install @jsdawn/vue3-tinymce`，然后在 vue 中引入
 
@@ -86,18 +86,16 @@ const state = reactive({
 
 ## 组件属性
 
-| 名称         | 类型       | 描述                                                                                          |
-| ------------ | ---------- | --------------------------------------------------------------------------------------------- |
-| `modelValue` | `String`   | 绑定值/内容，建议以 `v-model` 的形式使用                                                      |
-| `script-src` | `String`   | 自定义 `tinymce` 静态资源，支持绝对路径和网络地址。内置按需加载 `tinymce@5.8.2`               |
-| `setting`    | `Object`   | 设置项，延用官方 [tinymce 设置](https://www.tiny.cloud/docs/configure/integration-and-setup/) |
-| `setup`      | `Function` | 编辑器设置时的回调，回调参数 editor 实例，在此将编辑器事件添加到 TinyMCE 中                   |
-| `@change`    | `Function` | 编辑器监听到 `change input undo redo` 时触发，回调参数为编辑器 content                        |
-| `@init`      | `Function` | 编辑器初始化完成后触发，回调参数 `editor` 实例                                                |
+| 名称         | 类型       | 描述                                                                            |
+| ------------ | ---------- | ------------------------------------------------------------------------------- |
+| `modelValue` | `String`   | 绑定值/内容，建议以 `v-model` 的形式使用                                        |
+| `script-src` | `String`   | 自定义 `tinymce` 静态资源，支持绝对路径和网络地址。内置按需加载 `tinymce@5.8.2` |
+| `setting`    | `Object`   | 设置项，延用官方 tinymce 设置                                                   |
+| `setup`      | `Function` | 编辑器设置时的回调，回调参数 editor 实例，在此将编辑器事件添加到 TinyMCE 中     |
+| `@change`    | `Function` | 编辑器监听到 `change input undo redo` 时触发，回调参数为编辑器 content          |
+| `@init`      | `Function` | 编辑器初始化完成后触发，回调参数 `editor` 实例                                  |
 
 ## 使用示例
-
-<!-- 查看文档 [使用示例](https://jsdawn.gitee.io/vue3-tinymce/example.html) -->
 
 ## 更新日志
 
@@ -107,7 +105,7 @@ _`2020-01-19`_
 
 **Feature**
 
-- 拓展图片上传：自定义图片上传请求头 `setting.custom_images_upload_header` [#I4OZKC](https://gitee.com/jsdawn/vue3-tinymce/issues/I4OZKC)
+- 拓展图片上传：自定义图片上传请求头 `setting.custom_images_upload_header`
 
 > **转载声明**：
 > 请注明作者，注明原文链接，有疑问致邮 kingwyh1993@163.com
