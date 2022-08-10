@@ -1,4 +1,3 @@
-/// <reference types="vite/client" />
 import { defineConfig } from 'vitepress';
 
 const base = '/note/';
@@ -9,7 +8,7 @@ export default defineConfig({
   title: '青山依旧的网络日记',
   description: '记录web前端那些事',
   lastUpdated: true,
-  outDir: './.vitepress/lib',
+  outDir: './.vitepress/libs',
 
   // HTML head
   head: [
