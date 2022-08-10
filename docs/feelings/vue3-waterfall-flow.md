@@ -54,7 +54,7 @@ const flowDraw = () => {
   content.value.style.width = itemW * columnCount - props.columnGap + 'px';
 
   // 绘制 item 位置
-  const doms = content.value.querySelectorAll('.NTFlowItem');
+  const doms = content.value.querySelectorAll('.WaterfallItem');
   doms.forEach((dom: any) => {
     const minIdx = getMinIndex(flowHeight);
     dom.style.left = `${minIdx * itemW}px`;
@@ -102,9 +102,9 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="NTFlowList" ref="wrapper">
-    <div class="NTFlowContent" ref="content">
-      <div class="NTFlowItem" v-for="(item, index) in list" :key="index">
+  <div class="WaterfallList" ref="wrapper">
+    <div class="WaterfallContent" ref="content">
+      <div class="WaterfallItem" v-for="(item, index) in list" :key="index">
         <slot name="item" :index="index" :item="item"></slot>
       </div>
     </div>
@@ -112,12 +112,12 @@ onBeforeUnmount(() => {
 </template>
 
 <style lang="sass" scoped>
-.NTFlowContent
+.WaterfallContent
   margin-left: auto
   margin-right: auto
   position: relative
 
-.NTFlowItem
+.WaterfallItem
   padding-bottom: 24px
   width: v-bind("columnWidth + 'px'")
   position: absolute
@@ -130,14 +130,14 @@ onBeforeUnmount(() => {
 
 ```vue
 <template>
-  <NTFlowList :list="list">
+  <WaterfallList :list="list">
     <template #item="{ item }">
       <div class="item">
         <img :src="item.url" :style="{ height: item.height + 'px' }" />
         <p>{{ item.title }}</p>
       </div>
     </template>
-  </NTFlowList>
+  </WaterfallList>
 </template>
 
 <script setup lang="ts">
