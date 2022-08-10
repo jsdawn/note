@@ -54,7 +54,7 @@ title: vue3-tinymce 富文本编辑器
 
 ### 获取组件
 
-前往 [Vue3Tinymce 仓库](https://gitee.com/jsdawn/vue3-tinymce.git) 获取 `packages/Vue3Tinymce` 组件文件，Copy 到自己项目中使用。setting 选项配置参照 [tinymce 官方文档](https://www.tiny.cloud/docs/)
+[Vue3Tinymce 仓库](https://gitee.com/jsdawn/vue3-tinymce.git) 获取 `packages/Vue3Tinymce` 组件文件，Copy 到自己项目中使用。setting 选项配置参照 [tinymce 官方文档](https://www.tiny.cloud/docs/)
 
 这里也提供 NPM 引入：`npm install @jsdawn/vue3-tinymce`，然后在 vue 中引入
 
@@ -97,7 +97,7 @@ const state = reactive({
 
 ## 使用示例
 
-点击前往 [使用示例](https://jsdawn.gitee.io/vue3-tinymce/example.html)
+查看文档 [使用示例](https://jsdawn.gitee.io/vue3-tinymce/example.html)
 
 ## 更新日志
 
