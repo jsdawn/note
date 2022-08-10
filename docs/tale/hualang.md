@@ -44,6 +44,11 @@ list:
     ratio: 1.35
     title: 尤克里里
     author: 青山依旧
+  - image: /hualang/落日.jpg
+    ratio: 1.35
+    title: 落日余晖
+    brief: 西风残照，汉家陵阙
+    author: 青山依旧
 ---
 
 <script setup>
