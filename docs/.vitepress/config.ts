@@ -55,6 +55,7 @@ export default defineConfig({
     },
 
     // algolia 搜索配置
+    // 申请地址 https://docsearch.algolia.com/apply
     algolia: {
       appId: 'SNU9E5MK6X', // Application ID
       apiKey: '0a0c1afec3ff5f4278d744b2552c94c5', // 邮箱发的 API Key
@@ -99,6 +100,7 @@ function sidebar() {
       collapsible: true,
       items: [
         { text: 'Vue3.0 项目升级到 Vue3.2', link: '/guide/vue3-upgrade' },
+        { text: 'Vue3 富文本编辑器', link: '/guide/vue3-tinymce' },
         { text: 'Flutter 2 商城App实战指南', link: '/guide/flutter-mall' },
         { text: 'Flutter 布局相关', link: '/guide/flutter-weiget' },
         { text: 'Flutter 语法相关', link: '/guide/flutter-const' },
