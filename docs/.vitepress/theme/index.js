@@ -1,4 +1,6 @@
 import DefaultTheme from 'vitepress/theme';
+// 自定义css https://vitepress.vuejs.org/guide/theme-introduction.html#customizing-css
+import './index.sass';
 import NTBadge from '../../components/NTBadge.vue';
 import NTImageText from '../../components/NTImageText.vue';
 import NTFlowList from '../../components/NTFlowList.vue';

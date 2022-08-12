@@ -17,13 +17,15 @@ hero:
   tagline: 分享web前端技术，记录有趣的事物🤔
   actions:
     - theme: brand
-      text: 青山画廊
-      link: ./tale/hualang
-    - theme: alt
       text: Get Started
       link: ./guide/vue3-upgrade
       # link: https://juejin.cn/user/2101921962267079/posts
-
+    - theme: alt
+      text: 青山画廊
+      link: ./tale/hualang
+    - theme: link
+      text: 向我提问? 📝
+      link: https://gitee.com/jsdawn/note/issues/new?issue%5Bassignee_id%5D=0&issue%5Bmilestone_id%5D=0
 features:
   - icon: JS
     title: web前端指南
