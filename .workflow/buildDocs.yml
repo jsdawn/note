@@ -9,7 +9,7 @@ triggers:
         - master
     commitMessages:
       include:
-        - build.docs*
+        - ^build.docs.*
 stages:
   - name: build
     displayName: 构建
