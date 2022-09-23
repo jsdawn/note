@@ -4,13 +4,13 @@ title: vue3-tinymce 富文本编辑器
 
 # vue3-tinymce 富文本编辑器
 
-> `vue3-tinymce` 是基于 `vue@3.x` + `tinymce@5.8.x` 封装的富文本编辑器。
+> `vue3-tinymce` 是基于 `vue@3.x` + `tinymce@6.1.2` 封装的富文本编辑器。
 
 [![visitors](https://visitor-badge.laobi.icu/badge?page_id=jsdawn.vue3-tinymce)](https://gitee.com/jsdawn/vue3-tinymce)
 
 [![npm](https://img.shields.io/npm/dt/@jsdawn/vue3-tinymce?label=vue3-tinymce&logo=npm)](https://www.npmjs.com/package/@jsdawn/vue3-tinymce)
 
-[![tinymce](https://img.shields.io/badge/tinymce-%5E5.8.2-blue)](https://www.tiny.cloud/docs/)
+[![tinymce](https://img.shields.io/badge/tinymce-%5E6.1.2-blue)](https://www.tiny.cloud/docs/tinymce/6/)
 
 <br>
 
@@ -30,9 +30,11 @@ title: vue3-tinymce 富文本编辑器
 
 ### 开箱即用
 
-组件内置按需加载 `tinymce@5.8.2` 版本 cdn 资源，无需另外引入。使用 `v-if` 在必要时渲染组件。
+组件内置按需加载 `tinymce@6.1.2` 版本 cdn 资源。使用 `v-if` 在必要时渲染组件。
 
-属性 `script-src` 可自定义 tinymce 静态资源。支持绝对路径和网络地址。
+组件包含 `tinymce@6.1.2`, 属性 `script-src` 可自定义 tinymce 静态资源路径。支持绝对路径和网络地址。
+
+稳定使用：建议将 tinymce 资源包放到项目根目录，使用绝对路径。
 
 ### 拓展图片上传
 
@@ -55,17 +57,15 @@ title: vue3-tinymce 富文本编辑器
 
 ## 快速上手
 
-### 获取组件
+### NPM 使用
 
-前往 [Vue3Tinymce 仓库](https://gitee.com/jsdawn/vue3-tinymce.git) 获取 `packages/Vue3Tinymce` 组件文件，Copy 到自己项目中使用。setting 选项配置参照 [tinymce 官方文档](https://www.tiny.cloud/docs/)
+下载组件
 
-这里也提供 NPM 引入：`npm install @jsdawn/vue3-tinymce`，然后在 vue 中引入
-
-```js
-import Vue3Tinymce from '@jsdawn/vue3-tinymce';
+```sh
+npm install @jsdawn/vue3-tinymce
 ```
 
-### 在 vue 中使用
+在 vue3 中使用
 
 ```vue
 <template>
@@ -75,7 +75,7 @@ import Vue3Tinymce from '@jsdawn/vue3-tinymce';
 <script setup>
 import { reactive } from 'vue';
 // 引入组件
-import Vue3Tinymce from 'your-path/Vue3Tinymce';
+import Vue3Tinymce from '@jsdawn/vue3-tinymce';
 
 const state = reactive({
   content: 'hello vue3-tinymce!',
@@ -87,20 +87,114 @@ const state = reactive({
 </script>
 ```
 
+稳定使用静态资源包（推荐）：
+
+在 `node_modules` 目录中找到 `@jsdawn/vue3-tinymce`，将 `@jsdawn/vue3-tinymce/dist/tinymce` 目录复制到项目根目录的 `public/tinymce`，
+然后传入 组件的 `script-src`:
+
+```vue
+<template>
+  <vue3-tinymce
+    v-model="state.content"
+    :setting="state.setting"
+    script-src="/tinymce/tinymce.min.js"
+  />
+</template>
+```
+
+### 自定义组件使用
+
+前往 [Vue3Tinymce 仓库](https://gitee.com/jsdawn/vue3-tinymce.git) 获取 `packages/Vue3Tinymce` 组件文件，Copy 到自己项目中使用。setting 选项配置参照 [tinymce 官方文档](https://www.tiny.cloud/docs/tinymce/6/)
+
 ## 组件属性
 
-| 名称         | 类型       | 描述                                                                                          |
-| ------------ | ---------- | --------------------------------------------------------------------------------------------- |
-| `modelValue` | `String`   | 绑定值/内容，建议以 `v-model` 的形式使用                                                      |
-| `script-src` | `String`   | 自定义 `tinymce` 静态资源，支持绝对路径和网络地址。内置按需加载 `tinymce@5.8.2`               |
-| `setting`    | `Object`   | 设置项，延用官方 [tinymce 设置](https://www.tiny.cloud/docs/configure/integration-and-setup/) |
-| `setup`      | `Function` | 编辑器设置时的回调，回调参数 editor 实例，在此将编辑器事件添加到 TinyMCE 中                   |
-| `@change`    | `Function` | 编辑器监听到 `change input undo redo` 时触发，回调参数为编辑器 content                        |
-| `@init`      | `Function` | 编辑器初始化完成后触发，回调参数 `editor` 实例                                                |
+| 名称         | 类型       | 描述                                                                                             |
+| ------------ | ---------- | ------------------------------------------------------------------------------------------------ |
+| `modelValue` | `String`   | 绑定值/内容，建议以 `v-model` 的形式使用                                                         |
+| `script-src` | `String`   | 自定义 `tinymce` 静态资源，支持绝对路径和网络地址。内置按需加载 `tinymce@6.1.2`                  |
+| `setting`    | `Object`   | 设置项，延用官方 [tinymce 设置](https://www.tiny.cloud/docs/tinymce/6/editor-important-options/) |
+| `setup`      | `Function` | 编辑器设置时的回调，回调参数 editor 实例，在此将编辑器事件添加到 TinyMCE 中                      |
+| `@change`    | `Function` | 编辑器监听到 `change input undo redo` 时触发，回调参数为编辑器 content                           |
+| `@init`      | `Function` | 编辑器初始化完成后触发，回调参数 `editor` 实例                                                   |
 
-## 使用示例
+## 使用示例：
 
-点击前往 [使用示例](https://jsdawn.gitee.io/vue3-tinymce/example.html)
+### 简体中文
+
+`language` - 语言 code， `language_url` - 语言包路径。
+
+vue 脚手架项目可前往官网 [下载语言包](https://www.tiny.cloud/get-tiny/language-packages/) 放在 `public/tinymce/langs` 中，也可使用该组件语言包 cdn `https://unpkg.com/@jsdawn/vue3-tinymce@2.0.2/dist/tinymce/langs/zh-Hans.js`
+
+```js
+const setting = {
+    // 以中文简体为例
+    language: 'zh-Hans',
+    language_url: '/tinymce/langs/zh-Hans.js',
+    ...
+}
+```
+
+注意：如果项目存在多个编辑器存在的情况下，请为每个编辑器配置同样的语言配置。
+
+### 经典设置
+
+经典设置，包含了大部分可能用到的富文本编辑器功能和插件。
+
+```js
+const classic_setting = {
+  height: 300,
+  toolbar:
+    'undo redo | fullscreen | formatselect alignleft aligncenter alignright alignjustify | link unlink | numlist bullist | image media table | fontsizeselect forecolor backcolor | bold italic underline strikethrough | indent outdent | superscript subscript | removeformat |',
+  toolbar_mode: 'sliding',
+  quickbars_selection_toolbar:
+    'removeformat | bold italic underline strikethrough | fontsizeselect forecolor backcolor',
+  plugins: 'link image media table lists fullscreen quickbars',
+  fontsize_formats: '12px 14px 16px 18px',
+  default_link_target: '_blank',
+  link_title: false,
+  nonbreaking_force_tab: true,
+  // 以中文简体为例
+  language: 'zh-Hans',
+  language_url:
+    'https://unpkg.com/@jsdawn/vue3-tinymce@2.0.2/dist/tinymce/langs/zh-Hans.js',
+};
+```
+
+<iframe height="420" style="width: 100%;" scrolling="no" title="Vue3Tinymce-ex1" src="https://codepen.io/jsdawn/embed/BaxwWaQ?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/jsdawn/pen/BaxwWaQ">
+  Vue3Tinymce-ex1</a> by 青山依旧 (<a href="https://codepen.io/jsdawn">@jsdawn</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+### 类似掘金设置
+
+类似掘金设置服务 简洁的图文写作，仅包含较常用的文字格式，图片上传，与链接功能。
+
+```js
+const juejin_setting = {
+  menubar: false,
+  height: 190,
+  toolbar:
+    'bold italic underline h1 h2 blockquote codesample numlist bullist link image | removeformat fullscreen',
+  plugins: 'codesample link image table lists fullscreen',
+  toolbar_mode: 'sliding',
+  nonbreaking_force_tab: true,
+  link_title: false,
+  default_link_target: '_blank',
+  content_style: 'body{font-size: 16px}',
+  // 自定义 图片上传模式
+  custom_images_upload: true,
+  images_upload_url: 'your_upload_api_url...',
+  custom_images_upload_callback: (res) => res.url,
+  custom_images_upload_param: { id: 'xxxx01', age: 18 },
+};
+```
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="Vue3Tinymce-ex1" src="https://codepen.io/jsdawn/embed/mdLBWbe?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/jsdawn/pen/mdLBWbe">
+  Vue3Tinymce-ex1</a> by 青山依旧 (<a href="https://codepen.io/jsdawn">@jsdawn</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 ## 更新日志
 
@@ -108,9 +202,17 @@ const state = reactive({
 
 _`2020-01-19`_
 
-**Feature**
+_Feature_
 
 - 拓展图片上传：自定义图片上传请求头 `setting.custom_images_upload_header` [#I4OZKC](https://gitee.com/jsdawn/vue3-tinymce/issues/I4OZKC)
+
+### v2.0.2
+
+_`2022-09-23`_
+
+_Feature_
+
+- 升级 `tinymce` 版本，从 v5.8.x 版本升级到 `v6.1.2`。新增 `tinymce@6.1.2` 静态资源包，位置在 `dist/tinymce` 目录
 
 > **转载声明**：
 > 请注明作者，注明原文链接，有疑问致邮 kingwyh1993@163.com
