@@ -113,7 +113,10 @@ function sidebar() {
       text: '踩坑心得',
       collapsible: true,
       items: [
-        { text: 'Vue3 瀑布流列表组件封装', link: '/feelings/vue3-waterfall-flow.md' },
+        {
+          text: 'Vue3 瀑布流列表组件封装',
+          link: '/feelings/vue3-waterfall-flow.md',
+        },
         { text: 'JS 图片懒加载', link: '/feelings/js-lazy-load.md' },
         { text: 'Element 日期组件范围选择', link: '/feelings/el-date-picker' },
         { text: 'Antd vue Upload 自定义上传', link: '/feelings/a-upload' },
