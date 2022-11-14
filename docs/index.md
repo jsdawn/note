@@ -38,4 +38,10 @@ features:
     details: 随心笔记，记录有趣的事物
 ---
 
+<script setup>
+import PayQrcode from './widgets/PayQrcode.vue';
+</script>
+
+<PayQrcode />
+
 <NTBadge/>
