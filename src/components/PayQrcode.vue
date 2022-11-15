@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <p>的撒附近的拉分大发快了的撒舒服</p>
+  <p>想喝卡布奇诺☕️</p>
   <div class="pay-box">
     <div class="pay-item">
       <div class="cover">

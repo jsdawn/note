@@ -31,7 +31,7 @@ git init
 touch README.md
 git add README.md
 git commit -m "first commit"
-git remote add origin https://gitee.com/jsdawn/xxx.git
+git remote add origin https://github.com/jsdawn/xxx.git
 git push -u origin master
 
 #查看远程地址
@@ -160,7 +160,7 @@ git submodule update --init --recursive
 ### github 链接失败，修改 DNS
 
 - https://ipaddress.com/ 查询 ip 地址
-- 添加本地 hosts
+- 添加本地 hosts (指令：sudo vim /etc/hosts)
 
 ```sh
 # ip..    domain

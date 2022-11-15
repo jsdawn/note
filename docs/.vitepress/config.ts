@@ -38,13 +38,13 @@ export default defineConfig({
     // 编辑申请 Link
     editLink: {
       // https://github.com/vuejs/vitepress/edit/main/docs/:path
-      pattern: 'https://gitee.com/jsdawn/note/edit/master/docs/:path',
-      text: 'Edit this page on Gitee',
+      pattern: 'https://github.com/jsdawn/note/edit/master/docs/:path',
+      text: 'Edit this page on github',
     },
 
     // 社交链接（显示在网站右上角）
     socialLinks: [
-      { icon: 'github', link: 'https://gitee.com/jsdawn' },
+      { icon: 'github', link: 'https://github.com/jsdawn' },
       { icon: 'slack', link: 'https://juejin.cn/user/2101921962267079/posts' },
     ],
 

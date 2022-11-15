@@ -13,7 +13,7 @@ import PayQrcode from './components/PayQrcode.vue';
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <PayQrcode msg="Vite + Vue" />
+  <PayQrcode />
 </template>
 
 <style scoped lang="sass">

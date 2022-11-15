@@ -6,7 +6,7 @@ title: vue3-tinymce 富文本编辑器
 
 > `vue3-tinymce` 是基于 `vue@3.x` + `tinymce@6.1.2` 封装的富文本编辑器。
 
-[![visitors](https://visitor-badge.laobi.icu/badge?page_id=jsdawn.vue3-tinymce)](https://gitee.com/jsdawn/vue3-tinymce)
+[![visitors](https://visitor-badge.laobi.icu/badge?page_id=jsdawn.vue3-tinymce)](https://github.com/jsdawn/vue3-tinymce)
 
 [![npm](https://img.shields.io/npm/dt/@jsdawn/vue3-tinymce?label=vue3-tinymce&logo=npm)](https://www.npmjs.com/package/@jsdawn/vue3-tinymce)
 
@@ -104,7 +104,7 @@ const state = reactive({
 
 ### 自定义组件使用
 
-前往 [Vue3Tinymce 仓库](https://gitee.com/jsdawn/vue3-tinymce.git) 获取 `packages/Vue3Tinymce` 组件文件，Copy 到自己项目中使用。setting 选项配置参照 [tinymce 官方文档](https://www.tiny.cloud/docs/tinymce/6/)
+前往 [Vue3Tinymce 仓库](https://github.com/jsdawn/vue3-tinymce) 获取 `packages/Vue3Tinymce` 组件文件，Copy 到自己项目中使用。setting 选项配置参照 [tinymce 官方文档](https://www.tiny.cloud/docs/tinymce/6/)
 
 ## 组件属性
 
@@ -205,7 +205,7 @@ _`2020-01-19`_
 
 _Feature_
 
-- 拓展图片上传：自定义图片上传请求头 `setting.custom_images_upload_header` [#I4OZKC](https://gitee.com/jsdawn/vue3-tinymce/issues/I4OZKC)
+- 拓展图片上传：自定义图片上传请求头 `setting.custom_images_upload_header`
 
 ### v2.0.2
 

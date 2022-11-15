@@ -228,7 +228,7 @@ int id = args['id'];
 
 ### Http 请求
 
-使用 `dio` 库，dio 封装查看: [flutter_dio_util](https://gitee.com/jsdawn/flutter_dio_util)
+使用 `dio` 库，dio 封装查看: [flutter_dio_util](https://github.com/JunAILiang/flutter_dio_util)
 
 ```ts
 // 简单使用
@@ -749,7 +749,7 @@ flutter build apk --no-sound-null-safety
 博观而约取，厚积而薄发<br>
 记得 👍 点赞 + ❤️ 收藏，➕ 关注不迷路
 
-项目 Gitee：https://gitee.com/jsdawn/shopping_mall
+项目 github：https://github.com/jsdawn/shopping_mall
 
 > **转载声明**：
 > 请注明作者，注明原文链接，有疑问致邮 kingwyh1993@163.com

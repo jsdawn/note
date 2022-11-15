@@ -25,7 +25,7 @@ hero:
       link: ./tale/hualang
     - theme: link
       text: 向我提问? 📝
-      link: https://gitee.com/jsdawn/note/issues/new?issue%5Bassignee_id%5D=0&issue%5Bmilestone_id%5D=0
+      link: https://github.com/jsdawn/note/issues/new
 features:
   - icon: JS
     title: web前端指南
