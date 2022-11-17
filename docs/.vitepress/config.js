@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress';
 
-const base = '/note/';
+const base = process.env.VITE_BUILD_ENV ? process.env.VITE_BUILD_ENV : '/';
 
 export default defineConfig({
   base: base,

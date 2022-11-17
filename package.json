@@ -6,8 +6,9 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
+    "docs:dev": "cross-env VITE_BUILD_ENV=/ vitepress dev docs",
+    "docs:build": "cross-env VITE_BUILD_ENV=/note/ vitepress build docs",
+    "vercel:build": "cross-env VITE_BUILD_ENV=/ vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
@@ -15,6 +16,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.0",
+    "cross-env": "^7.0.3",
     "sass": "^1.54.0",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
