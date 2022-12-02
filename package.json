@@ -22,5 +22,8 @@
     "vite": "^3.0.0",
     "vitepress": "1.0.0-alpha.4",
     "vue-tsc": "^0.38.4"
+  },
+  "engines": {
+    "node": ">14.0.0"
   }
 }
