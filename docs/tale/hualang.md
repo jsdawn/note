@@ -49,6 +49,14 @@ list:
     title: 落日余晖
     brief: 西风残照，汉家陵阙
     author: 青山依旧
+  - image: /hualang/心海.jpeg
+    ratio: 0.70
+    title: 珊瑚宫心海
+    brief: 真珠之智
+  - image: /hualang/神里绫华.jpeg
+    ratio: 0.70
+    title: 神里绫华
+    brief: 白鹭霜华
 ---
 
 <script setup>
