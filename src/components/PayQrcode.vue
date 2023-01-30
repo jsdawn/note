@@ -5,14 +5,14 @@
   <div class="pay-box">
     <div class="pay-item">
       <div class="cover">
-        <img src="./wxqr.jpeg" alt="" />
+        <img src="../assets/wxqr.jpeg" alt="" />
       </div>
       <p>微信支付</p>
     </div>
 
     <div class="pay-item ali">
       <div class="cover">
-        <img src="./aliqr.jpeg" alt="" />
+        <img src="../assets/aliqr.jpeg" alt="" />
       </div>
       <p>支付宝支付</p>
     </div>
