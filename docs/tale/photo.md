@@ -1,6 +1,6 @@
 ---
 title: 青山相册
-titleTemplate: 定格每一个瞬间
+titleTemplate: 记录每一个瞬间
 description: 记录有趣的事物，定格每一个有故事有意义的瞬间
 layout: page
 sidebar: false
