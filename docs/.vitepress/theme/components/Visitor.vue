@@ -1,12 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-  <!-- <img
+  <img
     class="visitor"
     src="https://visitor-badge.laobi.icu/badge?page_id=jsdawn.note"
     onerror="this.style.display='none'"
-  /> -->
-  <span>1111</span>
+  />
 </template>
 
 <style scoped>

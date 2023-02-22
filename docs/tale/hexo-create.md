@@ -41,8 +41,8 @@ $ npm install
 # 启动项目
 $ hexo s
 
-# res 根据执行结果 进入对应得本地页面 http://localhost:4000/
-[info] Hexo is running at http://localhost:4000/. Press Ctrl+C to stop
+# res 根据执行结果 进入对应得本地页面 localhost:xxx
+[info] Hexo is running at localhost:xxx. Press Ctrl+C to stop
 ```
 
 ## 博客配置
@@ -51,7 +51,15 @@ $ hexo s
 
 ## 新建文章
 
-简单的配置自己的博客之后，咱们就开始编写自己的第一篇博文吧。<br />进入项目根目录执行：`$ hexo new "我的第一篇文章"`；<br />可以看到 source/*post 目录下 我们刚刚创建的文件 "我的第一篇文章.md"，用记事本或者编辑器打开之后，采用  [Markdown 语言](https://www.runoob.com/markdown/md-tutorial.html) 编写文档。<br />编写后保存，执行 hexo 启动指令 `$ hexo s`  启动本地服务器；<br />打开  _http://localhost:4000*  刷新就可以看到自己的第一篇文章。<br />
+简单的配置自己的博客之后，咱们就开始编写自己的第一篇博文吧。
+
+1. 进入项目根目录执行：`$ hexo new "我的第一篇文章"`；
+
+1. 可以看到 source/*post 目录下 我们刚刚创建的文件 "我的第一篇文章.md"，用记事本或者编辑器打开之后，采用  [Markdown 语言](https://www.runoob.com/markdown/md-tutorial.html) 编写文档。
+
+1. 编写后保存，执行 hexo 启动指令 `$ hexo s`  启动本地服务器
+
+1. 打开 localhost:xxx 刷新就可以看到自己的第一篇文章。
 
 ## 安利
 

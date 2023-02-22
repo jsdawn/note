@@ -43,5 +43,3 @@ import PayQrcode from './widgets/PayQrcode.vue';
 </script>
 
 <PayQrcode />
-
-<NTBadge/>

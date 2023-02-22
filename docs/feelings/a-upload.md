@@ -32,7 +32,7 @@ Ant Design Vue 是其社区为 Ant Design 实现的 Vue 版本，用到该组件
 | change | 上传文件改变时的状态 | Function |
 
 ## 示例上传接口
-```text
+```
 # 接口文档
 url `https://www.mocky.io/api/main/upload`
 头部
