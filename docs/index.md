@@ -14,7 +14,7 @@ head:
 hero:
   name: 青山依旧
   text: jsdawn's notes
-  tagline: 分享web前端技术，记录有趣的事物🤔
+  tagline: 分享web前端技术，记录有趣的事物
   actions:
     - theme: brand
       text: Get Started
@@ -27,14 +27,11 @@ hero:
       text: 向我提问? 📝
       link: https://github.com/jsdawn/note/issues/new
 features:
-  - icon: JS
-    title: web前端指南
+  - title: web前端指南
     details: javascript, vue, vite, wx小程序, flutter 等技术文章分享
-  - icon: 📒
-    title: 踩坑心得
+  - title: 踩坑心得
     details: 前端技术探索，各大组件库使用指南，各种技术重点难点踩坑心得
-  - icon: 🤔
-    title: 青山物语
+  - title: 青山物语
     details: 随心笔记，记录有趣的事物
 ---
 
