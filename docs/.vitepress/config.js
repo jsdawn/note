@@ -23,7 +23,14 @@ export default defineConfig({
   ],
 
   // markdown 解析器配置
-  markdown: {},
+  markdown: {
+    // 'css-variables' | 'dark-plus' | 'dracula-soft' | 'dracula' | 'github-dark-dimmed' | 'github-dark' | 'github-light' 
+    // 'hc_light' | 'light-plus' | 'material-theme-darker' | 'material-theme-lighter' | 'material-theme-ocean' | 'material-theme-palenight' | 'material-theme' | 'min-dark' | 'min-light' | 'monokai' | 'nord' | 'one-dark-pro' | 'poimandres' | 'rose-pine-dawn' | 'rose-pine-moon' | 'rose-pine' | 'slack-dark' | 'slack-ochin' | 'solarized-dark' | 'solarized-light' | 'vitesse-dark' | 'vitesse-light';
+    // theme: {
+    //   light: 'min-light',
+    //   dark: 'github-dark',
+    // },
+  },
 
   // Theme related configurations.
   themeConfig: {
@@ -52,7 +59,8 @@ export default defineConfig({
     // 网站底部版权信息等（无侧边栏的时候才显示）
     footer: {
       message: 'Released under the Apache License 2.0 License.',
-      copyright: 'Copyright © 2022-present 青山依旧',
+      copyright:
+        '<a href="https://beian.miit.gov.cn/" target="_blank">Copyright©2014-present jsdawn 桂ICP备2021007284号-1</a>',
     },
 
     // algolia 搜索配置

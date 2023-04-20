@@ -12,6 +12,9 @@ head:
       content: 青山依旧,网络日记,web前端,vue,js,vite
 
 hero:
+  image:
+    src: /logo.svg
+    alt: jsdawn notes
   name: 青山依旧
   text: jsdawn's notes
   tagline: 青山依旧的网络日记，分享web技术，记录有趣事物
@@ -26,6 +29,7 @@ hero:
     - theme: link
       text: 向我提问? 📝
       link: https://github.com/jsdawn/note/issues/new
+
 features:
   - title: web前端指南
     details: javascript, vue, vite, wx小程序, flutter 等技术文章分享

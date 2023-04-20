@@ -1,7 +1,9 @@
 import { h } from 'vue';
 import Theme from 'vitepress/theme';
 // 自定义css https://vitepress.vuejs.org/guide/theme-introduction.html#customizing-css
-import './index.sass';
+import './var.css';
+import './rainbow.css';
+import './index.scss';
 
 import Visitor from './components/Visitor.vue';
 import AsideSponsors from './components/AsideSponsors.vue';
