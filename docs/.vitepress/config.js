@@ -5,7 +5,7 @@ const base = process.env.VITE_BUILD_ENV ? process.env.VITE_BUILD_ENV : '/';
 export default defineConfig({
   base: base,
   lang: 'zh-CN',
-  title: '青山依旧的网络日记',
+  title: '青山依旧',
   description: '记录web前端那些事',
   lastUpdated: true,
   outDir: './.vitepress/libs',
@@ -29,6 +29,7 @@ export default defineConfig({
   themeConfig: {
     // 网页标题，默认 config.title
     // siteTitle: '青山依旧的网络日记',
+
     logo: '/logo.svg',
     // 右侧文章目录标题
     outlineTitle: '﹌﹋文章目录﹋﹌',

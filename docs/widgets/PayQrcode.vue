@@ -26,4 +26,9 @@ h2 {
   font-size: 24px;
   font-weight: 600;
 }
+
+.img-box{
+  margin-top: 20px;
+  max-width: 500px;
+}
 </style>

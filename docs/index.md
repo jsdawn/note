@@ -14,7 +14,7 @@ head:
 hero:
   name: 青山依旧
   text: jsdawn's notes
-  tagline: 分享web前端技术，记录有趣的事物
+  tagline: 青山依旧的网络日记，分享web技术，记录有趣事物
   actions:
     - theme: brand
       text: Get Started
@@ -29,10 +29,16 @@ hero:
 features:
   - title: web前端指南
     details: javascript, vue, vite, wx小程序, flutter 等技术文章分享
+    link: ./guide/vue3-tinymce
+    linkText: '指指点点'
   - title: 踩坑心得
     details: 前端技术探索，各大组件库使用指南，各种技术重点难点踩坑心得
+    link: ./feelings/vue3-waterfall-flow
+    linkText: '好大一个坑'
   - title: 青山物语
     details: 随心笔记，记录有趣的事物
+    link: ./tale/hualang
+    linkText: '走走停停'
 ---
 
 <script setup>

@@ -1,5 +1,10 @@
-<script setup lang="ts">
+<template>
+  <VPDocAsideSponsors class="nt-aside-sponsors" :data="data" />
+</template>
+
+<script setup>
 import { VPDocAsideSponsors } from 'vitepress/theme';
+
 const data = [
   {
     items: [
@@ -11,13 +16,16 @@ const data = [
 ];
 </script>
 
-<template>
-  <VPDocAsideSponsors :data="data" />
-</template>
+<style lang="scss">
+.VPDocAsideSponsors.nt-aside-sponsors {
+  .vp-sponsor-grid-box{
+    padding: 5px;
+  }
 
-<style>
-.vp-sponsor-grid.medium .vp-sponsor-grid-image {
-  max-height: 100%;
-  max-width: 100%;
+  .vp-sponsor-grid-image {
+    max-height: 100%;
+    max-width: 100%;
+    filter: none;
+  }
 }
 </style>
