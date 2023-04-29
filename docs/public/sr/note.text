@@ -1,0 +1,5 @@
+### img 文件夹为 SRL 静态图片资源
+- github 地址 https://github.com/KQM-git/SRL.git
+- 该文件夹基本从 SRL 同步，不轻易改动（各图片名与 sr 小程序字段value一致）
+
+### pic 文件夹为自定义静态文件
