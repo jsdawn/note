@@ -8,9 +8,9 @@ import { VPDocAsideSponsors } from 'vitepress/theme';
 const data = [
   {
     items: [
-      {
-        img: 'https://note.qscoding.com/assets/pay-qrcode.3243009c.png',
-      },
+      // {
+      //   img: 'https://note.qscoding.com/assets/pay-qrcode.3243009c.png',
+      // },
     ],
   },
 ];
@@ -18,7 +18,7 @@ const data = [
 
 <style lang="scss">
 .VPDocAsideSponsors.nt-aside-sponsors {
-  .vp-sponsor-grid-box{
+  .vp-sponsor-grid-box {
     padding: 5px;
   }
 

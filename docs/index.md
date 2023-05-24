@@ -45,8 +45,8 @@ features:
     linkText: '走走停停'
 ---
 
-<script setup>
+<!-- <script setup>
 import PayQrcode from './widgets/PayQrcode.vue';
 </script>
 
-<PayQrcode />
+<PayQrcode /> -->
