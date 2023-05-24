@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,d as l}from"./app.8ce59ef4.js";const i=JSON.parse('{"title":"文档相关的业务组件","description":"","frontmatter":{},"headers":[],"relativePath":"widgets/index.md","lastUpdated":1659494673000}'),p={name:"widgets/index.md"},o=l("",4),e=[o];function t(c,r,D,y,F,A){return a(),n("div",null,e)}const d=s(p,[["render",t]]);export{i as __pageData,d as default};
