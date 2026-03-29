@@ -24,8 +24,8 @@ hero:
       link: ./guide/vue3-upgrade
       # link: https://juejin.cn/user/2101921962267079/posts
     - theme: alt
-      text: 青山画廊
-      link: ./tale/hualang
+      text: 青山音乐
+      link: https://music.qscoding.com/
     - theme: link
       text: 向我提问? 📝
       link: https://github.com/jsdawn/note/issues/new
@@ -39,10 +39,10 @@ features:
     details: 前端技术探索，各大组件库使用指南，各种技术重点难点踩坑心得
     link: ./feelings/vue3-waterfall-flow
     linkText: '好大一个坑'
-  - title: 青山物语
-    details: 随心笔记，记录有趣的事物
-    link: ./tale/hualang
-    linkText: '走走停停'
+  - title: 🎵 青山音乐 (Music Player)
+    details: 我的 Next.js 全栈实践项目。一款基于 React 构建的优雅在线音乐播放器，实现了 SSR/ISR 与复杂状态管理，提供流畅沉浸的音乐体验。
+    link: https://music.qscoding.com/
+    linkText: 'Explore Project'
 ---
 
 <!-- <script setup>

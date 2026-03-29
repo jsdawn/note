@@ -16,3 +16,45 @@
     }
   }
 }
+
+/* 突出显示第三个特性卡片 (青山音乐) */
+.VPHomeFeatures {
+  .item:nth-child(3) {
+    .VPFeature {
+      border: 1px solid var(--vp-c-brand) !important;
+      box-shadow: 0 4px 14px rgba(62, 175, 124, 0.2) !important;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+
+      .box {
+        border: none !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+      }
+
+      &::after {
+        content: 'HOT';
+        position: absolute;
+        top: 0px;
+        right: -40px;
+        background: var(--vp-c-brand);
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 4px 40px;
+        transform: rotate(45deg);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        text-align: center;
+      }
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 20px rgba(62, 175, 124, 0.3) !important;
+        border-color: var(--vp-c-brand-dark) !important;
+      }
+    }
+  }
+}

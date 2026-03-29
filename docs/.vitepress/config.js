@@ -98,7 +98,7 @@ function nav() {
       ],
     },
     { text: 'Git/Node', link: '/node/git-npm', activeMatch: '/node/' },
-    { text: '青山物语', link: '/tale/hexo-create', activeMatch: '/tale/' },
+    { text: '青山音乐', link: 'https://music.qscoding.com/', target: '_blank' },
   ];
 }
 
