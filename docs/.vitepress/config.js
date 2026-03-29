@@ -8,7 +8,7 @@ export default defineConfig({
   title: '青山依旧',
   description: '记录web前端那些事',
   lastUpdated: true,
-  outDir: './.vitepress/libs',
+  outDir: './.vitepress/libs', // docs/.vitepress/dist
 
   // HTML head
   head: [
